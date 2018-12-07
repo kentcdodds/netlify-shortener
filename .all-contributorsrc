@@ -18,6 +18,25 @@
         "infra",
         "test"
       ]
+    },
+    {
+      "login": "CarlRosell",
+      "name": "Carl Rosell",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/2036823?v=4",
+      "profile": "https://github.com/CarlRosell",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "philhawksworth",
+      "name": "Phil Hawksworth",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5865?v=4",
+      "profile": "http://hawksworx.com",
+      "contributions": [
+        "ideas"
+      ]
     }
-  ]
+  ],
+  "repoType": "github"
 }
