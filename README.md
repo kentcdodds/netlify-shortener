@@ -16,10 +16,6 @@ beautifully :)</p>
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome][prs-badge]][prs] [![Code of Conduct][coc-badge]][coc]
 
-[![Watch on GitHub][github-watch-badge]][github-watch]
-[![Star on GitHub][github-star-badge]][github-star]
-[![Tweet][twitter-badge]][twitter]
-
 ## The problem
 
 You want a URL shortener for your custom domain and you want an easy way to
@@ -35,15 +31,13 @@ handles the redirecting for you.
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION. It'll update automatically -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Props](#props)
-- [Control Props](#control-props)
-- [Child Callback Function](#child-callback-function)
-- [Examples](#examples)
 - [FAQ](#faq)
+- [What about analytics?](#what-about-analytics)
+- [Can I keep my links private?](#can-i-keep-my-links-private)
 - [Inspiration](#inspiration)
 - [Other Solutions](#other-solutions)
 - [Contributors](#contributors)
@@ -157,39 +151,26 @@ MIT
 
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
-[build-badge]:
-  https://img.shields.io/travis/kentcdodds/netlify-shortener.svg?style=flat-square
+[build-badge]: https://img.shields.io/travis/kentcdodds/netlify-shortener.svg?style=flat-square
 [build]: https://travis-ci.org/kentcdodds/netlify-shortener
-[coverage-badge]:
-  https://img.shields.io/codecov/c/github/kentcdodds/netlify-shortener.svg?style=flat-square
+[coverage-badge]: https://img.shields.io/codecov/c/github/kentcdodds/netlify-shortener.svg?style=flat-square
 [coverage]: https://codecov.io/github/kentcdodds/netlify-shortener
-[version-badge]:
-  https://img.shields.io/npm/v/netlify-shortener.svg?style=flat-square
+[version-badge]: https://img.shields.io/npm/v/netlify-shortener.svg?style=flat-square
 [package]: https://www.npmjs.com/package/netlify-shortener
-[downloads-badge]:
-  https://img.shields.io/npm/dm/netlify-shortener.svg?style=flat-square
+[downloads-badge]: https://img.shields.io/npm/dm/netlify-shortener.svg?style=flat-square
 [npmtrends]: http://www.npmtrends.com/netlify-shortener
-[license-badge]:
-  https://img.shields.io/npm/l/netlify-shortener.svg?style=flat-square
+[license-badge]: https://img.shields.io/npm/l/netlify-shortener.svg?style=flat-square
 [license]: https://github.com/kentcdodds/netlify-shortener/blob/master/LICENSE
-[prs-badge]:
-  https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs]: http://makeapullrequest.com
-[donate-badge]:
-  https://img.shields.io/badge/$-support-green.svg?style=flat-square
-[coc-badge]:
-  https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
-[coc]:
-  https://github.com/kentcdodds/netlify-shortener/blob/master/other/CODE_OF_CONDUCT.md
-[github-watch-badge]:
-  https://img.shields.io/github/watchers/kentcdodds/netlify-shortener.svg?style=social
+[donate-badge]: https://img.shields.io/badge/$-support-green.svg?style=flat-square
+[coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
+[coc]: https://github.com/kentcdodds/netlify-shortener/blob/master/other/CODE_OF_CONDUCT.md
+[github-watch-badge]: https://img.shields.io/github/watchers/kentcdodds/netlify-shortener.svg?style=social
 [github-watch]: https://github.com/kentcdodds/netlify-shortener/watchers
-[github-star-badge]:
-  https://img.shields.io/github/stars/kentcdodds/netlify-shortener.svg?style=social
+[github-star-badge]: https://img.shields.io/github/stars/kentcdodds/netlify-shortener.svg?style=social
 [github-star]: https://github.com/kentcdodds/netlify-shortener/stargazers
-[twitter]:
-  https://twitter.com/intent/tweet?text=Check%20out%20netlify-shortener%20by%20%40kentcdodds%20https%3A%2F%2Fgithub.com%2Fkentcdodds%2Fnetlify-shortener%20%F0%9F%91%8D
-[twitter-badge]:
-  https://img.shields.io/twitter/url/https/github.com/kentcdodds/netlify-shortener.svg?style=social
+[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20netlify-shortener%20by%20%40kentcdodds%20https%3A%2F%2Fgithub.com%2Fkentcdodds%2Fnetlify-shortener%20%F0%9F%91%8D
+[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/kentcdodds/netlify-shortener.svg?style=social
 [emojis]: https://github.com/kentcdodds/all-contributors#emoji-key
 [all-contributors]: https://github.com/kentcdodds/all-contributors
