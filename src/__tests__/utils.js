@@ -9,6 +9,10 @@ const {
 
 jest.mock('child_process', () => ({spawnSync: jest.fn()}))
 
+afterEach(() => {
+  spawnSync.mockClear()
+})
+
 test('format formats the redirects links', () => {
   expect(
     format(`
@@ -85,6 +89,47 @@ Array [
 Array [
   Array [
     "committing: /foo -> https://foo.com",
+  ],
+  Array [
+    "pushing",
+  ],
+]
+`)
+  console.log.mockRestore()
+})
+
+test('commits and pushes a format', () => {
+  jest.spyOn(console, 'log').mockImplementation(() => {})
+
+  commitAndPush('/foo')
+  expect(spawnSync.mock.calls).toMatchInlineSnapshot(`
+Array [
+  Array [
+    "git",
+    Array [
+      "commit",
+      "-am",
+      "format links",
+    ],
+    Object {
+      "stdio": "inherit",
+    },
+  ],
+  Array [
+    "git",
+    Array [
+      "push",
+    ],
+    Object {
+      "stdio": "inherit",
+    },
+  ],
+]
+`)
+  expect(console.log.mock.calls).toMatchInlineSnapshot(`
+Array [
+  Array [
+    "committing: format links",
   ],
   Array [
     "pushing",

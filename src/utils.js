@@ -43,8 +43,9 @@ function validateUnique(short, contents) {
 }
 
 function commitAndPush(short, longLink) {
-  console.log(`committing: ${short} -> ${longLink}`)
-  spawnSync('git', ['commit', '-am', `${short} -> ${longLink}`], {
+  const message = longLink ? `${short} -> ${longLink}` : 'format links'
+  console.log(`committing: ${message}`)
+  spawnSync('git', ['commit', '-am', message], {
     stdio: 'inherit',
   })
   console.log('pushing')
