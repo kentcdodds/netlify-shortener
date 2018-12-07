@@ -56,6 +56,9 @@ npm install --save-dev netlify-shortener
 
 ## Usage
 
+- [Watch a demo](https://www.youtube.com/watch?v=HL6paXyx6hM&list=PLV5CVI1eNcJgCrPH_e6d57KRUTiDZgs0u)
+- [View the example repo](https://github.com/kentcdodds/netlify-shortener-example)
+
 Your project should have a `_redirects` file that looks like this:
 
 ```
