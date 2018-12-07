@@ -1,0 +1,60 @@
+{
+  "name": "netlify-shortener",
+  "version": "0.0.0-semantically-released",
+  "description": "Uses netlify's redirect functionality to make a personal URL shortener. Works beautifully :)",
+  "main": "dist/index.js",
+  "bin": {
+    "netlify-shortener": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=6"
+  },
+  "scripts": {
+    "add-contributor": "kcd-scripts contributors add",
+    "build": "kcd-scripts build",
+    "lint": "kcd-scripts lint",
+    "test": "kcd-scripts test",
+    "test:update": "npm test -- --updateSnapshot --coverage",
+    "validate": "kcd-scripts validate",
+    "setup": "npm install && npm run validate -s"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.2.0",
+    "clipboardy": "^1.2.3",
+    "read-pkg-up": "^4.0.0"
+  },
+  "devDependencies": {
+    "kcd-scripts": "^0.47.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "kcd-scripts pre-commit"
+    }
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/kcd-scripts/eslint.js",
+    "rules": {
+      "no-console": "off"
+    }
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kentcdodds/netlify-shortener.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kentcdodds/netlify-shortener/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/netlify-shortener#readme"
+}
