@@ -35,7 +35,7 @@ fs.writeFileSync(redirectPath, format(newContents))
 
 commitAndPush(short, longLink)
 
-const link = `${baseUrl}/${short}`
+const link = `${baseUrl}${short}`
 clipboardy.writeSync(link)
 
 console.log(`${link} has been copied to your clipboard`)
