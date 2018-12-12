@@ -71,6 +71,7 @@ Array [
       "/foo -> https://foo.com",
     ],
     Object {
+      "cwd": undefined,
       "stdio": "inherit",
     },
   ],
@@ -80,6 +81,7 @@ Array [
       "push",
     ],
     Object {
+      "cwd": undefined,
       "stdio": "inherit",
     },
   ],
@@ -112,6 +114,7 @@ Array [
       "format links",
     ],
     Object {
+      "cwd": undefined,
       "stdio": "inherit",
     },
   ],
@@ -121,6 +124,7 @@ Array [
       "push",
     ],
     Object {
+      "cwd": undefined,
       "stdio": "inherit",
     },
   ],

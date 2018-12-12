@@ -16,9 +16,10 @@ const {
 const {
   pkg: {baseUrl = 'https://update-baseUrl-in-your-package.json'},
   path: pkgPath,
-} = readPkg.sync()
+} = readPkg.sync({cwd: path.join(__dirname, '../..')})
 
-const redirectPath = path.join(path.dirname(pkgPath), '_redirects')
+const repoRoot = path.dirname(pkgPath)
+const redirectPath = path.join(repoRoot, '_redirects')
 
 const [, , longLink, code] = process.argv
 const short = `/${code || generateCode()}`
@@ -33,7 +34,7 @@ if (longLink) {
 
 fs.writeFileSync(redirectPath, format(newContents))
 
-commitAndPush(short, longLink)
+commitAndPush(short, longLink, repoRoot)
 
 const link = `${baseUrl}${short}`
 clipboardy.writeSync(link)

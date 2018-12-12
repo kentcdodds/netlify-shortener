@@ -35,6 +35,7 @@ handles the redirecting for you.
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Bash Function](#bash-function)
 - [FAQ](#faq)
 - [What about analytics?](#what-about-analytics)
 - [Can I keep my links private?](#can-i-keep-my-links-private)
@@ -99,6 +100,18 @@ The `netlify-shortener` does a few things:
 
 Netlify's deploys are normally fast enough that the new URL should be deployed
 by the time you've shared it to someone.
+
+## Bash Function
+
+If you want to be able to run this anywhere in the terminal, you can try making
+a custom bash function (place this in your `~/.bash_profile` file):
+
+```bash
+shorten() { node {path-to-local-repo}/node_modules/.bin/netlify-shortener "$1" "$2"; }
+```
+
+> How to do this on windows? I don't know, if you figure it out, please open a
+> PR to replace this note with instructions :)
 
 ## FAQ
 

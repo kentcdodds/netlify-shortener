@@ -42,14 +42,15 @@ function validateUnique(short, contents) {
   }
 }
 
-function commitAndPush(short, longLink) {
+function commitAndPush(short, longLink, cwd) {
   const message = longLink ? `${short} -> ${longLink}` : 'format links'
   console.log(`committing: ${message}`)
   spawnSync('git', ['commit', '-am', message], {
     stdio: 'inherit',
+    cwd,
   })
   console.log('pushing')
-  spawnSync('git', ['push'], {stdio: 'inherit'})
+  spawnSync('git', ['push'], {stdio: 'inherit', cwd})
 }
 
 function validateUrl(url) {
