@@ -110,8 +110,12 @@ a custom bash function (place this in your `~/.bash_profile` file):
 shorten() { node {path-to-local-repo}/node_modules/.bin/netlify-shortener "$1" "$2"; }
 ```
 
-> How to do this on windows? I don't know, if you figure it out, please open a
-> PR to replace this note with instructions :)
+> How to do this on windows?
+
+Using Cmder, add this to your `user-alias.cmd` file.
+```cmd
+shorten=cmd /c "cd /d {path-to-local-repo} && npm run shorten $1 $2"
+```
 
 ## FAQ
 
