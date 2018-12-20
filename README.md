@@ -13,7 +13,7 @@ beautifully :)</p>
 [![version][version-badge]][package] [![downloads][downloads-badge]][npmtrends]
 [![MIT License][license-badge]][license]
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome][prs-badge]][prs] [![Code of Conduct][coc-badge]][coc]
 
 ## The problem
@@ -110,8 +110,12 @@ a custom bash function (place this in your `~/.bash_profile` file):
 shorten() { node {path-to-local-repo}/node_modules/.bin/netlify-shortener "$1" "$2"; }
 ```
 
-> How to do this on windows? I don't know, if you figure it out, please open a
-> PR to replace this note with instructions :)
+> How to do this on windows?
+
+Using Cmder, add this to your `user-alias.cmd` file.
+```cmd
+shorten=cmd /c "cd /d {path-to-local-repo} && npm run shorten $1 $2"
+```
 
 ## FAQ
 
@@ -153,9 +157,8 @@ Thanks goes to these people ([emoji key][emojis]):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;"/><br /><sub><b>Kent C. Dodds</b></sub>](https://kentcdodds.com)<br />[💻](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Code") [📖](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Documentation") [🚇](#infra-kentcdodds "Infrastructure (Hosting, Build-Tools, etc)") [⚠️](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Tests") | [<img src="https://avatars0.githubusercontent.com/u/2036823?v=4" width="100px;"/><br /><sub><b>Carl Rosell</b></sub>](https://github.com/CarlRosell)<br />[🤔](#ideas-CarlRosell "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/5865?v=4" width="100px;"/><br /><sub><b>Phil Hawksworth</b></sub>](http://hawksworx.com)<br />[🤔](#ideas-philhawksworth "Ideas, Planning, & Feedback") |
-| :---: | :---: | :---: |
-
+| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;"/><br /><sub><b>Kent C. Dodds</b></sub>](https://kentcdodds.com)<br />[💻](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Code") [📖](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Documentation") [🚇](#infra-kentcdodds "Infrastructure (Hosting, Build-Tools, etc)") [⚠️](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Tests") | [<img src="https://avatars0.githubusercontent.com/u/2036823?v=4" width="100px;"/><br /><sub><b>Carl Rosell</b></sub>](https://github.com/CarlRosell)<br />[🤔](#ideas-CarlRosell "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/5865?v=4" width="100px;"/><br /><sub><b>Phil Hawksworth</b></sub>](http://hawksworx.com)<br />[🤔](#ideas-philhawksworth "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/2480667?v=4" width="100px;"/><br /><sub><b>Matt Ferderer</b></sub>](http://mattferderer.com)<br />[📖](https://github.com/kentcdodds/netlify-shortener/commits?author=mattferderer "Documentation") |
+| :---: | :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.
