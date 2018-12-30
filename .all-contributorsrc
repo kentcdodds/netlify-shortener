@@ -45,6 +45,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "j-f1",
+      "name": "Jed Fox",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/25517624?v=4",
+      "profile": "https://j-f1.github.io",
+      "contributions": [
+        "example"
+      ]
     }
   ],
   "repoType": "github"
