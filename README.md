@@ -13,7 +13,7 @@ beautifully :)</p>
 [![version][version-badge]][package] [![downloads][downloads-badge]][npmtrends]
 [![MIT License][license-badge]][license]
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome][prs-badge]][prs] [![Code of Conduct][coc-badge]][coc]
 
 ## The problem
@@ -35,7 +35,10 @@ handles the redirecting for you.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Bash Function](#bash-function)
+- [Shell Function](#shell-function)
+  - [Bash](#bash)
+  - [Fish](#fish)
+  - [Windows (cmd)](#windows-cmd)
 - [FAQ](#faq)
 - [What about analytics?](#what-about-analytics)
 - [Can I keep my links private?](#can-i-keep-my-links-private)
@@ -101,18 +104,37 @@ The `netlify-shortener` does a few things:
 Netlify's deploys are normally fast enough that the new URL should be deployed
 by the time you've shared it to someone.
 
-## Bash Function
+<a name="bash-function"></a>
+
+## Shell Function
 
 If you want to be able to run this anywhere in the terminal, you can try making
-a custom bash function (place this in your `~/.bash_profile` file):
+a custom function for your shell.
+
+### Bash
+
+Place this in your `~/.bash_profile` file:
 
 ```bash
 shorten() { node {path-to-local-repo}/node_modules/.bin/netlify-shortener "$1" "$2"; }
 ```
 
-> How to do this on windows?
+### Fish
+
+Place this in `~/.config/fish/funcitons/shorten.fish`:
+
+```fish
+function shorten --description "Shorten a URL"
+  node {path-to-local-repo}/node_modules/.bin/netlify-shortener $argv
+end
+```
+
+(Alternatively, run `funced -s shorten` and Fish will open your editor. Paste this code into the opened file.)
+
+### Windows (cmd)
 
 Using Cmder, add this to your `user-alias.cmd` file.
+
 ```cmd
 shorten=cmd /c "cd /d {path-to-local-repo} && npm run shorten $1 $2"
 ```
@@ -157,8 +179,9 @@ Thanks goes to these people ([emoji key][emojis]):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;"/><br /><sub><b>Kent C. Dodds</b></sub>](https://kentcdodds.com)<br />[💻](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Code") [📖](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Documentation") [🚇](#infra-kentcdodds "Infrastructure (Hosting, Build-Tools, etc)") [⚠️](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Tests") | [<img src="https://avatars0.githubusercontent.com/u/2036823?v=4" width="100px;"/><br /><sub><b>Carl Rosell</b></sub>](https://github.com/CarlRosell)<br />[🤔](#ideas-CarlRosell "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/5865?v=4" width="100px;"/><br /><sub><b>Phil Hawksworth</b></sub>](http://hawksworx.com)<br />[🤔](#ideas-philhawksworth "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/2480667?v=4" width="100px;"/><br /><sub><b>Matt Ferderer</b></sub>](http://mattferderer.com)<br />[📖](https://github.com/kentcdodds/netlify-shortener/commits?author=mattferderer "Documentation") |
-| :---: | :---: | :---: | :---: |
+| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;"/><br /><sub><b>Kent C. Dodds</b></sub>](https://kentcdodds.com)<br />[💻](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Code") [📖](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Documentation") [🚇](#infra-kentcdodds "Infrastructure (Hosting, Build-Tools, etc)") [⚠️](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Tests") | [<img src="https://avatars0.githubusercontent.com/u/2036823?v=4" width="100px;"/><br /><sub><b>Carl Rosell</b></sub>](https://github.com/CarlRosell)<br />[🤔](#ideas-CarlRosell "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/5865?v=4" width="100px;"/><br /><sub><b>Phil Hawksworth</b></sub>](http://hawksworx.com)<br />[🤔](#ideas-philhawksworth "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/2480667?v=4" width="100px;"/><br /><sub><b>Matt Ferderer</b></sub>](http://mattferderer.com)<br />[📖](https://github.com/kentcdodds/netlify-shortener/commits?author=mattferderer "Documentation") | [<img src="https://avatars2.githubusercontent.com/u/25517624?v=4" width="100px;"/><br /><sub><b>Jed Fox</b></sub>](https://j-f1.github.io)<br />[💡](#example-j-f1 "Examples") |
+| :---: | :---: | :---: | :---: | :---: |
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.
