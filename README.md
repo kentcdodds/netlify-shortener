@@ -160,7 +160,7 @@ expensive as well.
 
 So I
 [tried writing a custom netlify function](https://www.youtube.com/watch?v=Xs-qvWqoi2U&list=PLV5CVI1eNcJgCrPH_e6d57KRUTiDZgs0u)
-and it worked pretty well, but then I was tipped of by
+and it worked pretty well, but then I was tipped off by
 [smart](https://twitter.com/CarlRosell/status/1070824678468567040)
 [people](https://twitter.com/philhawksworth/status/1070826313173426176) that
 using Netlify's built-in `_redirects` functionality would work well and it does!
