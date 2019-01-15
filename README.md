@@ -170,7 +170,9 @@ this for and now you can use it too!
 
 ## Other Solutions
 
-I'm not aware of any, if you are please [make a pull request][prs] and add it
+- [netlify-shortener-sh](https://github.com/caarlos0/netlify-shortener-sh): plain shell script version
+
+If you know more alternatives, please [make a pull request][prs] and add it
 here!
 
 ## Contributors
