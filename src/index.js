@@ -8,6 +8,7 @@ const readPkg = require('read-pkg-up')
 const {
   format,
   generateCode,
+  pull,
   commitAndPush,
   validateUrl,
   validateUnique,
@@ -21,6 +22,8 @@ const {
 const repoRoot = path.dirname(pkgPath)
 const redirectPath = path.join(repoRoot, '_redirects')
 
+pull(repoRoot)
+
 const [, , longLink, code] = process.argv
 const short = `/${code || generateCode()}`
 const contents = fs.readFileSync(redirectPath, 'utf8')
@@ -33,7 +36,6 @@ if (longLink) {
 }
 
 fs.writeFileSync(redirectPath, format(newContents))
-
 commitAndPush(short, longLink, repoRoot)
 
 const link = `${baseUrl}${short}`

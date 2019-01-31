@@ -42,6 +42,11 @@ function validateUnique(short, contents) {
   }
 }
 
+function pull(cwd) {
+  console.log('pulling the latest changes')
+  spawnSync('git', ['pull'], {stdio: 'inherit', cwd})
+}
+
 function commitAndPush(short, longLink, cwd) {
   const message = longLink ? `${short} -> ${longLink}` : 'format links'
   console.log(`committing: ${message}`)
@@ -73,6 +78,7 @@ function generateCode() {
 module.exports = {
   format,
   generateCode,
+  pull,
   commitAndPush,
   validateUrl,
   validateUnique,

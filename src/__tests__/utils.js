@@ -4,6 +4,7 @@ const {
   validateUnique,
   validateUrl,
   generateCode,
+  pull,
   commitAndPush,
 } = require('../utils')
 
@@ -57,10 +58,31 @@ test('generates a random code', () => {
   expect(generateCode()).toHaveLength(5)
 })
 
+test('pulls', () => {
+  jest.spyOn(console, 'log').mockImplementation(() => {})
+
+  pull('/my/cwd')
+  expect(spawnSync.mock.calls).toMatchInlineSnapshot(`
+Array [
+  Array [
+    "git",
+    Array [
+      "pull",
+    ],
+    Object {
+      "cwd": "/my/cwd",
+      "stdio": "inherit",
+    },
+  ],
+]
+`)
+  console.log.mockRestore()
+})
+
 test('commits and pushes', () => {
   jest.spyOn(console, 'log').mockImplementation(() => {})
 
-  commitAndPush('/foo', 'https://foo.com')
+  commitAndPush('/foo', 'https://foo.com', '/my/cwd')
   expect(spawnSync.mock.calls).toMatchInlineSnapshot(`
 Array [
   Array [
@@ -71,7 +93,7 @@ Array [
       "/foo -> https://foo.com",
     ],
     Object {
-      "cwd": undefined,
+      "cwd": "/my/cwd",
       "stdio": "inherit",
     },
   ],
@@ -81,7 +103,7 @@ Array [
       "push",
     ],
     Object {
-      "cwd": undefined,
+      "cwd": "/my/cwd",
       "stdio": "inherit",
     },
   ],
