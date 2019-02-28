@@ -13,7 +13,7 @@ beautifully :)</p>
 [![version][version-badge]][package] [![downloads][downloads-badge]][npmtrends]
 [![MIT License][license-badge]][license]
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome][prs-badge]][prs] [![Code of Conduct][coc-badge]][coc]
 
 ## The problem
@@ -115,18 +115,18 @@ a custom function for your shell.
 ### Shell Agnostic
 
 1. Add the following [executable definition][npm-bin] to your `package.json`:
-    ```json
-    { "bin" : { "shorten" : "cli.js" } }
-    ```
+   ```json
+   {"bin": {"shorten": "cli.js"}}
+   ```
 2. Create the `cli.js` file:
-    ```js
-    #!/usr/bin/env node
-    require('netlify-shortener');
-    ```
+   ```js
+   #!/usr/bin/env node
+   require('netlify-shortener')
+   ```
 3. From your project directory, run the following to register the command globally:
-    ```sh
-    npm link
-    ```
+   ```sh
+   npm link
+   ```
 
 ### Bash
 
@@ -198,8 +198,9 @@ Thanks goes to these people ([emoji key][emojis]):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;" alt="Kent C. Dodds"/><br /><sub><b>Kent C. Dodds</b></sub>](https://kentcdodds.com)<br />[💻](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Code") [📖](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Documentation") [🚇](#infra-kentcdodds "Infrastructure (Hosting, Build-Tools, etc)") [⚠️](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Tests") | [<img src="https://avatars0.githubusercontent.com/u/2036823?v=4" width="100px;" alt="Carl Rosell"/><br /><sub><b>Carl Rosell</b></sub>](https://github.com/CarlRosell)<br />[🤔](#ideas-CarlRosell "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/5865?v=4" width="100px;" alt="Phil Hawksworth"/><br /><sub><b>Phil Hawksworth</b></sub>](http://hawksworx.com)<br />[🤔](#ideas-philhawksworth "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/2480667?v=4" width="100px;" alt="Matt Ferderer"/><br /><sub><b>Matt Ferderer</b></sub>](http://mattferderer.com)<br />[📖](https://github.com/kentcdodds/netlify-shortener/commits?author=mattferderer "Documentation") | [<img src="https://avatars2.githubusercontent.com/u/25517624?v=4" width="100px;" alt="Jed Fox"/><br /><sub><b>Jed Fox</b></sub>](https://j-f1.github.io)<br />[💡](#example-j-f1 "Examples") | [<img src="https://avatars3.githubusercontent.com/u/622118?v=4" width="100px;" alt="Eric McCormick"/><br /><sub><b>Eric McCormick</b></sub>](https://edm00se.codes/)<br />[📖](https://github.com/kentcdodds/netlify-shortener/commits?author=edm00se "Documentation") |
-| :---: | :---: | :---: | :---: | :---: | :---: |
+| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;" alt="Kent C. Dodds"/><br /><sub><b>Kent C. Dodds</b></sub>](https://kentcdodds.com)<br />[💻](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Code") [📖](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Documentation") [🚇](#infra-kentcdodds "Infrastructure (Hosting, Build-Tools, etc)") [⚠️](https://github.com/kentcdodds/netlify-shortener/commits?author=kentcdodds "Tests") | [<img src="https://avatars0.githubusercontent.com/u/2036823?v=4" width="100px;" alt="Carl Rosell"/><br /><sub><b>Carl Rosell</b></sub>](https://github.com/CarlRosell)<br />[🤔](#ideas-CarlRosell "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/5865?v=4" width="100px;" alt="Phil Hawksworth"/><br /><sub><b>Phil Hawksworth</b></sub>](http://hawksworx.com)<br />[🤔](#ideas-philhawksworth "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/2480667?v=4" width="100px;" alt="Matt Ferderer"/><br /><sub><b>Matt Ferderer</b></sub>](http://mattferderer.com)<br />[📖](https://github.com/kentcdodds/netlify-shortener/commits?author=mattferderer "Documentation") | [<img src="https://avatars2.githubusercontent.com/u/25517624?v=4" width="100px;" alt="Jed Fox"/><br /><sub><b>Jed Fox</b></sub>](https://j-f1.github.io)<br />[💡](#example-j-f1 "Examples") | [<img src="https://avatars3.githubusercontent.com/u/622118?v=4" width="100px;" alt="Eric McCormick"/><br /><sub><b>Eric McCormick</b></sub>](https://edm00se.codes/)<br />[📖](https://github.com/kentcdodds/netlify-shortener/commits?author=edm00se "Documentation") | [<img src="https://avatars3.githubusercontent.com/u/2006222?v=4" width="100px;" alt="Preston Lamb"/><br /><sub><b>Preston Lamb</b></sub>](http://www.prestonlamb.com)<br />[💻](https://github.com/kentcdodds/netlify-shortener/commits?author=pjlamb12 "Code") |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.
