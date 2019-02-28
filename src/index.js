@@ -24,7 +24,13 @@ const redirectPath = path.join(repoRoot, '_redirects')
 
 pull(repoRoot)
 
-const [, , longLink, code] = process.argv
+const [, , longLink, codeRaw] = process.argv
+
+let code
+if (codeRaw) {
+  code = codeRaw.startsWith('/') ? codeRaw.substring(1) : codeRaw
+}
+
 const short = `/${code || generateCode()}`
 const contents = fs.readFileSync(redirectPath, 'utf8')
 
