@@ -138,7 +138,7 @@ shorten() { node {path-to-local-repo}/node_modules/.bin/netlify-shortener "$1" "
 
 ### Fish
 
-Place this in `~/.config/fish/funcitons/shorten.fish`:
+Place this in `~/.config/fish/functions/shorten.fish`:
 
 ```fish
 function shorten --description "Shorten a URL"
