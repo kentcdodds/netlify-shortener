@@ -72,7 +72,18 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ddbeck",
+      "name": "Daniel D. Beck",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/64103?v=4",
+      "profile": "https://ddbeck.com/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
-  "repoType": "github"
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "contributorsPerLine": 7
 }
