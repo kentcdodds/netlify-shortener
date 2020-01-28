@@ -90,9 +90,19 @@
       "contributions": [
         "fundingFinding"
       ]
+    },
+    {
+      "login": "jakejarvis",
+      "name": "Jake Jarvis",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1703673?v=4",
+      "profile": "http://jarv.is",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
   "repoHost": "https://github.com",
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
