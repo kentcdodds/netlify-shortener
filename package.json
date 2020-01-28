@@ -7,11 +7,10 @@
     "netlify-shortener": "./dist/index.js"
   },
   "engines": {
-    "node": ">=8",
+    "node": ">=10",
     "npm": ">=6"
   },
   "scripts": {
-    "add-contributor": "kcd-scripts contributors add",
     "build": "kcd-scripts build",
     "lint": "kcd-scripts lint",
     "test": "kcd-scripts test",
@@ -26,12 +25,12 @@
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "^7.2.0",
-    "clipboardy": "^1.2.3",
-    "read-pkg-up": "^4.0.0"
+    "@babel/runtime": "^7.8.3",
+    "clipboardy": "^2.1.0",
+    "read-pkg-up": "^7.0.1"
   },
   "devDependencies": {
-    "kcd-scripts": "^0.47.0"
+    "kcd-scripts": "^4.1.0"
   },
   "husky": {
     "hooks": {
