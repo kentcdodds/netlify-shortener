@@ -15,7 +15,7 @@ const {
 } = require('./utils')
 
 const {
-  pkg: {baseUrl = 'https://update-baseUrl-in-your-package.json'},
+  packageJson: {baseUrl = 'https://update-baseUrl-in-your-package.json'},
   path: pkgPath,
 } = readPkg.sync({cwd: path.join(__dirname, '../..')})
 
