@@ -1,9 +1,3 @@
-<p align="center">
-<a href="https://codefund.io/properties/497/visit-sponsor">
-<img src="https://codefund.io/properties/497/sponsor" />
-</a>
-</p>
-
 <div align="center">
 <h1>netlify-shortener</h1>
 
