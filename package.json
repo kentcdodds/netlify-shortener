@@ -22,7 +22,7 @@
     "dist"
   ],
   "keywords": [],
-  "author": "Kent C. Dodds <kentcdodds@gmail.com> (https://kentcdodds.com)",
+  "author": "Kent C. Dodds <me@kentcdodds.com> (https://kentcdodds.com)",
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.9.2",
