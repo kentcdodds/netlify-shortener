@@ -3,18 +3,23 @@
 
 <p>Uses netlify's redirect functionality to make a personal URL shortener. Works
 beautifully :)</p>
-
 </div>
 
-<hr />
+---
 
+<!-- prettier-ignore-start -->
 [![Build Status][build-badge]][build]
 [![Code Coverage][coverage-badge]][coverage]
-[![version][version-badge]][package] [![downloads][downloads-badge]][npmtrends]
+[![version][version-badge]][package]
+[![downloads][downloads-badge]][npmtrends]
 [![MIT License][license-badge]][license]
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors)
-[![PRs Welcome][prs-badge]][prs] [![Code of Conduct][coc-badge]][coc]
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![PRs Welcome][prs-badge]][prs]
+[![Code of Conduct][coc-badge]][coc]
+<!-- prettier-ignore-end -->
 
 ## The problem
 
@@ -45,7 +50,10 @@ handles the redirecting for you.
 - [Can I keep my links private?](#can-i-keep-my-links-private)
 - [Inspiration](#inspiration)
 - [Other Solutions](#other-solutions)
-- [Contributors](#contributors)
+- [Issues](#issues)
+  - [🐛 Bugs](#-bugs)
+  - [💡 Feature Requests](#-feature-requests)
+- [Contributors ✨](#contributors-)
 - [LICENSE](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -195,7 +203,25 @@ this for and now you can use it too!
 If you know more alternatives, please [make a pull request][prs] and add it
 here!
 
-## Contributors
+## Issues
+
+_Looking to contribute? Look for the [Good First Issue][good-first-issue]
+label._
+
+### 🐛 Bugs
+
+Please file an issue for bugs, missing documentation, or unexpected behavior.
+
+[**See Bugs**][bugs]
+
+### 💡 Feature Requests
+
+Please file an issue to suggest new features. Vote on feature requests by adding
+a 👍. This helps maintainers prioritize what to work on.
+
+[**See Feature Requests**][requests]
+
+## Contributors ✨
 
 Thanks goes to these people ([emoji key][emojis]):
 
@@ -221,6 +247,7 @@ Thanks goes to these people ([emoji key][emojis]):
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.
@@ -230,32 +257,28 @@ Contributions of any kind welcome!
 
 MIT
 
+<!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
-[build-badge]:
-  https://img.shields.io/travis/kentcdodds/netlify-shortener.svg?style=flat-square
+[build-badge]: https://img.shields.io/travis/kentcdodds/netlify-shortener.svg?style=flat-square
 [build]: https://travis-ci.org/kentcdodds/netlify-shortener
-[coverage-badge]:
-  https://img.shields.io/codecov/c/github/kentcdodds/netlify-shortener.svg?style=flat-square
+[coverage-badge]: https://img.shields.io/codecov/c/github/kentcdodds/netlify-shortener.svg?style=flat-square
 [coverage]: https://codecov.io/github/kentcdodds/netlify-shortener
-[version-badge]:
-  https://img.shields.io/npm/v/netlify-shortener.svg?style=flat-square
+[version-badge]: https://img.shields.io/npm/v/netlify-shortener.svg?style=flat-square
 [package]: https://www.npmjs.com/package/netlify-shortener
-[downloads-badge]:
-  https://img.shields.io/npm/dm/netlify-shortener.svg?style=flat-square
+[downloads-badge]: https://img.shields.io/npm/dm/netlify-shortener.svg?style=flat-square
 [npmtrends]: http://www.npmtrends.com/netlify-shortener
-[license-badge]:
-  https://img.shields.io/npm/l/netlify-shortener.svg?style=flat-square
+[license-badge]: https://img.shields.io/npm/l/netlify-shortener.svg?style=flat-square
 [license]: https://github.com/kentcdodds/netlify-shortener/blob/master/LICENSE
-[prs-badge]:
-  https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs]: http://makeapullrequest.com
-[donate-badge]:
-  https://img.shields.io/badge/$-support-green.svg?style=flat-square
-[coc-badge]:
-  https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
-[coc]:
-  https://github.com/kentcdodds/netlify-shortener/blob/master/other/CODE_OF_CONDUCT.md
-[emojis]: https://github.com/kentcdodds/all-contributors#emoji-key
-[all-contributors]: https://github.com/kentcdodds/all-contributors
+[coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
+[coc]: https://github.com/kentcdodds/netlify-shortener/blob/master/other/CODE_OF_CONDUCT.md
+[emojis]: https://github.com/all-contributors/all-contributors#emoji-key
+[all-contributors]: https://github.com/all-contributors/all-contributors
+[bugs]: https://github.com/kentcdodds/netlify-shortener/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sort%3Acreated-desc+label%3Abug
+[requests]: https://github.com/kentcdodds/netlify-shortener/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc+label%3Aenhancement
+[good-first-issue]: https://github.com/kentcdodds/netlify-shortener/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc+label%3Aenhancement+label%3A%22good+first+issue%22
+
 [npm-bin]: https://docs.npmjs.com/files/package.json#bin
+<!-- prettier-ignore-end -->
