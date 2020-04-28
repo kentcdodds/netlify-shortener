@@ -38,6 +38,36 @@ test('format formats the redirects links', () => {
 `)
 })
 
+test('format sorts the redirects links', () => {
+  expect(
+    format(`
+# comment 1
+
+/foo https://foo.com
+/example https://example.com
+/kcd https://kentcdodds.com
+/bar https://bar.com
+#comment2
+
+
+/* http://google.com
+  `),
+  ).toMatchInlineSnapshot(`
+"
+# comment1
+
+/bar       https://bar.com
+/example   https://example.com
+/foo       https://foo.com
+/kcd       https://kentcdodds.com
+#comment2
+
+
+/*         http://google.com
+"
+`)
+})
+
 test('validates links are unique', () => {
   expect(() => validateUnique('/foo', `/bar https://bar.com`)).not.toThrow()
   expect(() =>
