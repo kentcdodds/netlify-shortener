@@ -63,6 +63,14 @@ function validateUrl(url) {
   new URL(url)
 }
 
+function addProtocolIfMissing(url) {
+  if (url.startsWith('http://') || url.startsWith('https://')) {
+    return url
+  } else {
+    return `https://${url}`
+  }
+}
+
 function generateCode() {
   let text = ''
   const possible = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789'
@@ -81,4 +89,5 @@ module.exports = {
   commitAndPush,
   validateUrl,
   validateUnique,
+  addProtocolIfMissing,
 }

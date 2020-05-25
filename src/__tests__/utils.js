@@ -3,6 +3,7 @@ const {
   format,
   validateUnique,
   validateUrl,
+  addProtocolIfMissing,
   generateCode,
   pull,
   commitAndPush,
@@ -52,6 +53,12 @@ test('validates url is valid', () => {
   expect(() => validateUrl('blah')).toThrowErrorMatchingInlineSnapshot(
     `"Invalid URL: blah"`,
   )
+})
+
+test('adds https:// to url if protocol is missing', () => {
+  expect(addProtocolIfMissing('https://blah.com')).toEqual('https://blah.com')
+  expect(addProtocolIfMissing('http://blah.com')).toEqual('http://blah.com')
+  expect(addProtocolIfMissing('blah.com')).toEqual('https://blah.com')
 })
 
 test('generates a random code', () => {
