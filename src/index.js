@@ -12,6 +12,7 @@ const {
   commitAndPush,
   validateUrl,
   validateUnique,
+  addProtocolIfMissing,
 } = require('./utils')
 
 const {
@@ -34,15 +35,17 @@ if (codeRaw) {
 const short = `/${code || generateCode()}`
 const contents = fs.readFileSync(redirectPath, 'utf8')
 
+const formattedLink = addProtocolIfMissing(longLink)
+
 let newContents = contents
-if (longLink) {
-  validateUrl(longLink)
+if (formattedLink) {
+  validateUrl(formattedLink)
   validateUnique(short, contents)
-  newContents = `${short} ${longLink}\n${contents}`
+  newContents = `${short} ${formattedLink}\n${contents}`
 }
 
 fs.writeFileSync(redirectPath, format(newContents))
-commitAndPush(short, longLink, repoRoot)
+commitAndPush(short, formattedLink, repoRoot)
 
 const link = `${baseUrl}${short}`
 clipboardy.writeSync(link)
