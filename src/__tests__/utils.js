@@ -60,7 +60,6 @@ test('adds https:// to url if protocol is missing', () => {
     `"Invalid URL: blah"`,
   )
 })
-// addHttpsIfMissing
 
 test('generates a random code', () => {
   expect(generateCode()).toHaveLength(5)
