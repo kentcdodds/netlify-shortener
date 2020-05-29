@@ -35,10 +35,10 @@ if (codeRaw) {
 const short = `/${code || generateCode()}`
 const contents = fs.readFileSync(redirectPath, 'utf8')
 
-const formattedLink = addProtocolIfMissing(longLink)
-
 let newContents = contents
-if (formattedLink) {
+let formattedLink = null
+if (longLink) {
+  formattedLink = addProtocolIfMissing(longLink)
   validateUrl(formattedLink)
   validateUnique(short, contents)
   newContents = `${short} ${formattedLink}\n${contents}`
