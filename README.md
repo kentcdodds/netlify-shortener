@@ -15,7 +15,7 @@ beautifully :)</p>
 [![MIT License][license-badge]][license]
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![PRs Welcome][prs-badge]][prs]
 [![Code of Conduct][coc-badge]][coc]
@@ -244,6 +244,7 @@ Thanks goes to these people ([emoji key][emojis]):
     <td align="center"><a href="http://jarv.is"><img src="https://avatars3.githubusercontent.com/u/1703673?v=4" width="100px;" alt=""/><br /><sub><b>Jake Jarvis</b></sub></a><br /><a href="https://github.com/kentcdodds/netlify-shortener/commits?author=jakejarvis" title="Code">💻</a></td>
     <td align="center"><a href="https://michaeldeboey.be"><img src="https://avatars3.githubusercontent.com/u/6643991?v=4" width="100px;" alt=""/><br /><sub><b>Michaël De Boey</b></sub></a><br /><a href="https://github.com/kentcdodds/netlify-shortener/commits?author=MichaelDeBoey" title="Code">💻</a></td>
     <td align="center"><a href="https://oisin.io"><img src="https://avatars0.githubusercontent.com/u/5693967?v=4" width="100px;" alt=""/><br /><sub><b>Oisín Quinn</b></sub></a><br /><a href="https://github.com/kentcdodds/netlify-shortener/commits?author=oisinq" title="Code">💻</a> <a href="https://github.com/kentcdodds/netlify-shortener/commits?author=oisinq" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/SebJones"><img src="https://avatars3.githubusercontent.com/u/13268343?v=4" width="100px;" alt=""/><br /><sub><b>SebJones</b></sub></a><br /><a href="https://github.com/kentcdodds/netlify-shortener/commits?author=SebJones" title="Code">💻</a></td>
   </tr>
 </table>
 
