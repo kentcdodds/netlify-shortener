@@ -131,6 +131,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Zhouzi",
+      "name": "Gabin Aureche",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/2291025?v=4",
+      "profile": "http://gabinaureche.com",
+      "contributions": [
+        "code",
+        "test"
+      ]
     }
   ]
 }
