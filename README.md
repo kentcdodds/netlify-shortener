@@ -82,11 +82,11 @@ Your project should have a `_redirects` file that looks like this:
 ```
 
 This module exposes a binary that you should use in your `package.json` scripts.
-You also need to add a `baseUrl` to your `package.json`:
+You also need to add a `homepage` to your `package.json`:
 
 ```json
 {
-  "baseUrl": "https://jsair.io",
+  "homepage": "https://jsair.io",
   "scripts": {
     "shorten": "netlify-shortener"
   }
@@ -250,6 +250,7 @@ Thanks goes to these people ([emoji key][emojis]):
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.
