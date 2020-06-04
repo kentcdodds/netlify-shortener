@@ -15,10 +15,13 @@ const {
   addProtocolIfMissing,
 } = require('./utils')
 
-const {
-  packageJson: {baseUrl = 'https://update-baseUrl-in-your-package.json'},
-  path: pkgPath,
-} = readPkg.sync({cwd: path.join(__dirname, '../..')})
+const {packageJson, path: pkgPath} = readPkg.sync({
+  cwd: path.join(__dirname, '../..'),
+})
+const baseUrl =
+  packageJson.baseUrl ||
+  packageJson.homepage ||
+  'https://update-homepage-in-your-package.json'
 
 const repoRoot = path.dirname(pkgPath)
 const redirectPath = path.join(repoRoot, '_redirects')
