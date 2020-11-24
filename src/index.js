@@ -32,7 +32,7 @@ const [, , longLink, codeRaw] = process.argv
 
 let code
 if (codeRaw) {
-  code = codeRaw.startsWith('/') ? codeRaw.substring(1) : codeRaw
+  code = encodeURIComponent(codeRaw.startsWith('/') ? codeRaw.substring(1) : codeRaw)
 }
 
 const short = `/${code || generateCode()}`
