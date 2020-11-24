@@ -1,8 +1,7 @@
 <div align="center">
 <h1>netlify-shortener</h1>
 
-<p>Uses netlify's redirect functionality to make a personal URL shortener. Works
-beautifully :)</p>
+<p>Uses netlify's redirect functionality to make a personal URL shortener. Works beautifully :)</p>
 </div>
 
 ---
@@ -13,10 +12,7 @@ beautifully :)</p>
 [![version][version-badge]][package]
 [![downloads][downloads-badge]][npmtrends]
 [![MIT License][license-badge]][license]
-
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![All Contributors][all-contributors-badge]](#contributors-)
 [![PRs Welcome][prs-badge]][prs]
 [![Code of Conduct][coc-badge]][coc]
 <!-- prettier-ignore-end -->
@@ -43,11 +39,6 @@ handles the redirecting for you.
 - [Shell Function](#shell-function)
   - [Shell Agnostic](#shell-agnostic)
   - [Bash](#bash)
-  - [Fish](#fish)
-  - [Windows (cmd)](#windows-cmd)
-- [FAQ](#faq)
-- [What about analytics?](#what-about-analytics)
-- [Can I keep my links private?](#can-i-keep-my-links-private)
 - [Inspiration](#inspiration)
 - [Other Solutions](#other-solutions)
 - [Issues](#issues)
@@ -61,10 +52,10 @@ handles the redirecting for you.
 ## Installation
 
 This module is distributed via [npm][npm] which is bundled with [node][node] and
-should be installed as one of your project's `devDependencies`:
+should be installed as one of your project's `dependencies`:
 
 ```
-npm install --save-dev netlify-shortener
+npm install --save netlify-shortener
 ```
 
 ## Usage
@@ -139,61 +130,11 @@ a custom function for your shell.
 
 ### Bash
 
-Place this in your `~/.bash_profile` file:
-
-```bash
-shorten() { node {path-to-local-repo}/node_modules/.bin/netlify-shortener "$1" "$2"; }
-```
-
-### Fish
-
-Place this in `~/.config/fish/functions/shorten.fish`:
-
-```fish
-function shorten --description "Shorten a URL"
-  node {path-to-local-repo}/node_modules/.bin/netlify-shortener $argv
-end
-```
-
-(Alternatively, run `funced -s shorten` and Fish will open your editor. Paste
-this code into the opened file.)
-
-### Windows (cmd)
-
-Using Cmder, add this to your `user-alias.cmd` file.
-
-```cmd
-shorten=cmd /c "cd /d {path-to-local-repo} && npm run shorten $1 $2"
-```
-
-## FAQ
-
-## What about analytics?
-
-I don't think Netlify will give you analytics, but you should be able to set up
-CloudFlare in front of your domain and I think they'll give you analytics.
-
-## Can I keep my links private?
-
-Netlify doesn't charge for linking up private repositories (HOW COOL IS THAT!?)
-so you can make your GitHub repo private and that should keep your links
-private.
-
 ## Inspiration
 
 URL shorteners for custom domains and custom short codes are insanely expensive.
 Hiveam.com was the best price-wise, but the price went up and it's super
 expensive as well.
-
-So I
-[tried writing a custom netlify function](https://www.youtube.com/watch?v=Xs-qvWqoi2U&list=PLV5CVI1eNcJgCrPH_e6d57KRUTiDZgs0u)
-and it worked pretty well, but then I was tipped off by
-[smart](https://twitter.com/CarlRosell/status/1070824678468567040)
-[people](https://twitter.com/philhawksworth/status/1070826313173426176) that
-using Netlify's built-in `_redirects` functionality would work well and it does!
-
-So I built this tool to make it easier to do this for the two domains I need
-this for and now you can use it too!
 
 ## Other Solutions
 
@@ -251,6 +192,7 @@ Thanks goes to these people ([emoji key][emojis]):
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.
@@ -261,10 +203,10 @@ Contributions of any kind welcome!
 MIT
 
 <!-- prettier-ignore-start -->
-[npm]: https://www.npmjs.com/
+[npm]: https://www.npmjs.com
 [node]: https://nodejs.org
-[build-badge]: https://img.shields.io/travis/kentcdodds/netlify-shortener.svg?style=flat-square
-[build]: https://travis-ci.org/kentcdodds/netlify-shortener
+[build-badge]: https://img.shields.io/github/workflow/status/kentcdodds/netlify-shortener/validate?logo=github&style=flat-square
+[build]: https://github.com/kentcdodds/netlify-shortener/actions?query=workflow%3Avalidate
 [coverage-badge]: https://img.shields.io/codecov/c/github/kentcdodds/netlify-shortener.svg?style=flat-square
 [coverage]: https://codecov.io/github/kentcdodds/netlify-shortener
 [version-badge]: https://img.shields.io/npm/v/netlify-shortener.svg?style=flat-square
@@ -272,13 +214,14 @@ MIT
 [downloads-badge]: https://img.shields.io/npm/dm/netlify-shortener.svg?style=flat-square
 [npmtrends]: http://www.npmtrends.com/netlify-shortener
 [license-badge]: https://img.shields.io/npm/l/netlify-shortener.svg?style=flat-square
-[license]: https://github.com/kentcdodds/netlify-shortener/blob/master/LICENSE
+[license]: https://github.com/kentcdodds/netlify-shortener/blob/main/LICENSE
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs]: http://makeapullrequest.com
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
-[coc]: https://github.com/kentcdodds/netlify-shortener/blob/master/other/CODE_OF_CONDUCT.md
+[coc]: https://github.com/kentcdodds/netlify-shortener/blob/main/CODE_OF_CONDUCT.md
 [emojis]: https://github.com/all-contributors/all-contributors#emoji-key
 [all-contributors]: https://github.com/all-contributors/all-contributors
+[all-contributors-badge]: https://img.shields.io/github/all-contributors/kentcdodds/netlify-shortener?color=orange&style=flat-square
 [bugs]: https://github.com/kentcdodds/netlify-shortener/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sort%3Acreated-desc+label%3Abug
 [requests]: https://github.com/kentcdodds/netlify-shortener/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc+label%3Aenhancement
 [good-first-issue]: https://github.com/kentcdodds/netlify-shortener/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc+label%3Aenhancement+label%3A%22good+first+issue%22
