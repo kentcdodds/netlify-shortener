@@ -188,11 +188,13 @@ Thanks goes to these people ([emoji key][emojis]):
     <td align="center"><a href="https://github.com/SebJones"><img src="https://avatars3.githubusercontent.com/u/13268343?v=4" width="100px;" alt=""/><br /><sub><b>SebJones</b></sub></a><br /><a href="https://github.com/kentcdodds/netlify-shortener/commits?author=SebJones" title="Code">💻</a></td>
     <td align="center"><a href="http://gabinaureche.com"><img src="https://avatars1.githubusercontent.com/u/2291025?v=4" width="100px;" alt=""/><br /><sub><b>Gabin Aureche</b></sub></a><br /><a href="https://github.com/kentcdodds/netlify-shortener/commits?author=Zhouzi" title="Code">💻</a> <a href="https://github.com/kentcdodds/netlify-shortener/commits?author=Zhouzi" title="Tests">⚠️</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="http://twitter.com/nat0n"><img src="https://avatars3.githubusercontent.com/u/444538?v=4" width="100px;" alt=""/><br /><sub><b>Anton Andreasson</b></sub></a><br /><a href="https://github.com/kentcdodds/netlify-shortener/commits?author=naton" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.

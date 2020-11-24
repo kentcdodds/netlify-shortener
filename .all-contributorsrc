@@ -141,6 +141,15 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "naton",
+      "name": "Anton Andreasson",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/444538?v=4",
+      "profile": "http://twitter.com/nat0n",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
