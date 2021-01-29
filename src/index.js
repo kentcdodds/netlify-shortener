@@ -23,6 +23,8 @@ const baseUrl =
   packageJson.homepage ||
   'https://update-homepage-in-your-package.json'
 
+const doCommitAndPush = packageJson.commitAndPush !== false
+
 const repoRoot = path.dirname(pkgPath)
 const redirectPath = path.join(repoRoot, '_redirects')
 
@@ -32,7 +34,9 @@ const [, , longLink, codeRaw] = process.argv
 
 let code
 if (codeRaw) {
-  code = encodeURIComponent(codeRaw.startsWith('/') ? codeRaw.substring(1) : codeRaw)
+  code = encodeURIComponent(
+    codeRaw.startsWith('/') ? codeRaw.substring(1) : codeRaw,
+  )
 }
 
 const short = `/${code || generateCode()}`
@@ -48,7 +52,10 @@ if (longLink) {
 }
 
 fs.writeFileSync(redirectPath, format(newContents))
-commitAndPush(short, formattedLink, repoRoot)
+
+if (doCommitAndPush) {
+  commitAndPush(short, formattedLink, repoRoot)
+}
 
 const link = `${baseUrl}${short}`
 clipboardy.writeSync(link)
