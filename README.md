@@ -92,6 +92,20 @@ npm run shorten https://yahoo.com # generates a short code and adds it for you
 npm run shorten https://github.com gh # adds gh as a short URL for you
 ```
 
+In niche situations, if you require your `_redirects` file to live in a
+subdirectory of your project, you can add `customRedirects` to your
+`package.json` to define its path.
+
+```json
+{
+  "homepage": "https://jsair.io",
+  "customRedirects": "my-sub-folder/_redirects",
+  "scripts": {
+    "shorten": "netlify-shortener"
+  }
+}
+```
+
 The `netlify-shortener` does a few things:
 
 1. generates a short code if one is not provided
@@ -195,6 +209,7 @@ Thanks goes to these people ([emoji key][emojis]):
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.

@@ -24,7 +24,10 @@ const baseUrl =
   'https://update-homepage-in-your-package.json'
 
 const repoRoot = path.dirname(pkgPath)
-const redirectPath = path.join(repoRoot, '_redirects')
+const redirectPath = path.join(
+  repoRoot,
+  packageJson.customRedirects ? packageJson.customRedirects : '_redirects',
+)
 
 pull(repoRoot)
 
@@ -32,7 +35,9 @@ const [, , longLink, codeRaw] = process.argv
 
 let code
 if (codeRaw) {
-  code = encodeURIComponent(codeRaw.startsWith('/') ? codeRaw.substring(1) : codeRaw)
+  code = encodeURIComponent(
+    codeRaw.startsWith('/') ? codeRaw.substring(1) : codeRaw,
+  )
 }
 
 const short = `/${code || generateCode()}`
