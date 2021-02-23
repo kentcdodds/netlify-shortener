@@ -94,12 +94,16 @@ npm run shorten https://github.com gh # adds gh as a short URL for you
 
 In niche situations, if you require your `_redirects` file to live in a
 subdirectory of your project, you can add `customRedirects` to your
-`package.json` to define its path.
+`package.json` to define its path. If you also require your project to be built,
+you can set `nsBuild` to `true` which will build your project just before
+committing and pushing. Both of these are optional opt-in features which most
+people can ignore.
 
 ```json
 {
   "homepage": "https://jsair.io",
   "customRedirects": "my-sub-folder/_redirects",
+  "nsBuild": "true",
   "scripts": {
     "shorten": "netlify-shortener"
   }

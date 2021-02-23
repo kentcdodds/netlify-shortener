@@ -82,6 +82,11 @@ function generateCode() {
   return text
 }
 
+function runBuild() {
+  console.log('Building...')
+  spawnSync('npm', ['run', 'build'])
+}
+
 module.exports = {
   format,
   generateCode,
@@ -90,4 +95,5 @@ module.exports = {
   validateUrl,
   validateUnique,
   addProtocolIfMissing,
+  runBuild,
 }

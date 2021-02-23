@@ -13,6 +13,7 @@ const {
   validateUrl,
   validateUnique,
   addProtocolIfMissing,
+  runBuild,
 } = require('./utils')
 
 const {packageJson, path: pkgPath} = readPkg.sync({
@@ -53,6 +54,11 @@ if (longLink) {
 }
 
 fs.writeFileSync(redirectPath, format(newContents))
+
+if (packageJson.nsBuild && packageJson.nsBuild === true) {
+  runBuild()
+}
+
 commitAndPush(short, formattedLink, repoRoot)
 
 const link = `${baseUrl}${short}`

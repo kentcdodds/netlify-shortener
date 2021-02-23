@@ -7,6 +7,7 @@ const {
   generateCode,
   pull,
   commitAndPush,
+  runBuild,
 } = require('../utils')
 
 jest.mock('child_process', () => ({spawnSync: jest.fn()}))
@@ -80,6 +81,31 @@ Array [
       "cwd": "/my/cwd",
       "stdio": "inherit",
     },
+  ],
+]
+`)
+  console.log.mockRestore()
+})
+
+test('builds', () => {
+  jest.spyOn(console, 'log').mockImplementation(() => {})
+
+  runBuild()
+  expect(spawnSync.mock.calls).toMatchInlineSnapshot(`
+Array [
+  Array [
+    "npm",
+    Array [
+      "run",
+      "build",
+    ],
+  ],
+]
+`)
+  expect(console.log.mock.calls).toMatchInlineSnapshot(`
+Array [
+  Array [
+    "Building...",
   ],
 ]
 `)
