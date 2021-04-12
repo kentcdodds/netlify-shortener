@@ -34,13 +34,13 @@ sure to include those changes (if they exist) in your commit.
 
 ## Help needed
 
-Please checkout the [the open issues][issues]
+Please checkout the [open issues][issues]
 
 Also, please watch the repo and respond to questions/bug reports/feature
 requests! Thanks!
 
 <!-- prettier-ignore-start -->
-[egghead]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
+[egghead]: https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github
 [all-contributors]: https://github.com/all-contributors/all-contributors
 [issues]: https://github.com/kentcdodds/netlify-shortener/issues
 <!-- prettier-ignore-end -->
