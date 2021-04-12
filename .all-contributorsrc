@@ -150,6 +150,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "marcuslyons",
+      "name": "Marcus Lyons",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10541922?v=4",
+      "profile": "https://www.marcuslyons.com",
+      "contributions": [
+        "doc"
+      ]
     }
   ]
 }
