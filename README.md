@@ -128,7 +128,10 @@ a custom function for your shell.
    npm link
    ```
 
-### Bash
+## ScriptKit
+
+You can use [this script](https://github.com/johnlindquist/kit/discussions/295#discussion-3383989)
+with [ScriptKit](https://www.scriptkit.com/) which integrates with netlify-shortener as well.
 
 ## Inspiration
 
