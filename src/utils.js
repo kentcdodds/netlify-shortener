@@ -11,13 +11,21 @@ function format(contents) {
     return length
   }, 0)
 
-  const formattedLinks = links.map(([short, long]) => {
-    if (short.startsWith('/')) {
-      return `${short.padEnd(longestLength, ' ')}   ${long}`
-    } else {
-      return `${short}${long}`
-    }
-  })
+  const formattedLinks = links
+    .sort(([shortA, longA], [shortB, longB]) =>
+      shortA !== '/*' && shortA.startsWith('/') && shortB.startsWith('/')
+        ? longA < longB
+          ? -1
+          : 1
+        : 0,
+    )
+    .map(([short, long]) => {
+      if (short.startsWith('/')) {
+        return `${short.padEnd(longestLength, ' ')}   ${long}`
+      } else {
+        return `${short}${long}`
+      }
+    })
 
   return formattedLinks.join('\n')
 }
