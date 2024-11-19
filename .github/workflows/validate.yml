@@ -34,10 +34,7 @@ jobs:
 
       - name: ▶️ Run validate script
         run: npm run validate
-
-      - name: ⬆️ Upload coverage report
-        uses: codecov/codecov-action@v1
-
+  
   release:
     needs: main
     runs-on: ubuntu-latest
