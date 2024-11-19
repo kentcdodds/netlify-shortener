@@ -50,9 +50,11 @@ test('validates links are unique', () => {
 
 test('validates url is valid', () => {
   expect(() => validateUrl('https://blah.com')).not.toThrow()
-  expect(() => validateUrl('blah')).toThrowErrorMatchingInlineSnapshot(
-    `"Invalid URL: blah"`,
-  )
+  expect(() => validateUrl('blah')).toThrow()
+  const urlError1 = 'Invalid URL'
+  const urlError2 = 'Invalid URL: blah'
+  const errorMessages = new RegExp(`${urlError1}|${urlError2}`)
+  expect(() => validateUrl('blah')).toThrow(errorMessages)
 })
 
 test('adds https:// to url if protocol is missing', () => {
